@@ -1,0 +1,24 @@
+* {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'mundial';
+}
+
+@font-face {
+    font-family: 'mundial';
+    src: url(../font/MundialRegular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'mundial';
+    src: url(../font/MundialHair.otf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'mundial';
+    src: url(../font/MundialLight.otf);
+    font-weight: 300;
+}

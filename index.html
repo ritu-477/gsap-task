@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Gsap Task</title>
+    <meta name="title" content="Gsap Task" />
+<meta name="description" content="Obiettivi chiari e definiti perseguiti con un approccio personalizzato verso risultati concreti e misurabili." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://gsap-task-peach.vercel.app/" />
+<meta property="og:title" content="Gsap Task" />
+<meta property="og:description" content="Obiettivi chiari e definiti perseguiti con un approccio personalizzato verso risultati concreti e misurabili." />
+<meta property="og:image" content="/meta-image.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://gsap-task-peach.vercel.app/" />
+<meta property="twitter:title" content="Gsap Task" />
+<meta property="twitter:description" content="Obiettivi chiari e definiti perseguiti con un approccio personalizzato verso risultati concreti e misurabili." />
+<meta property="twitter:image" content="/meta-image.png" />
+    <!-- ====== TAILWIND CSS ======= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ====== TAILWIND JS ======= -->
+         <link rel="icon" href="./assets/images/png/arrow-group.png">
+    <script src="./tailwind.config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+    </style>    
+</head>
+
+<body>
+    <section class="min-h-screen bg-black flex justify-center items-center">
+        <h1 class="text-white text-3xl">Scroll Trigger</h1>
+    </section>
+    <section class="bg-[#B5EFCB] relative min-h-screen pinned-section w-full">
+        <img class="relative" src="./assets/images/webp/hero-layer.webp" alt="image">
+        <div class="container lg:relative max-w-[1920px]">
+            <h2 class="text-white xl:left-[30%] lg:left-[16%] md:left-[12%] left-[5%] max-sm:right-2 lg:text-[30px] max-lg:pt-20 text-xl font-normal leading-[50px] text-center absolute xl:-top-[52%] top-[3%] lg:-top-[30%]"> Ideata da
+                 <span class="bg-[#99E9B3] lg:text-2xl text-xl py-[11px] px-6 rounded-[10px] text-black border-white border">noi</span>
+                grazie all’esperienza acquisita nel 
+                 <span class="bg-[#99E9B3] py-[11px] px-6 rounded-[10px] border-white border text-black lg:text-2xl text-xl">tempo</span>
+                <span class="text-black">.</span>
+            </h2>
+            <p class="text-white text-base font-normal leading-[22.44px] text-end rotate-90 absolute right-[9%] bottom-[30%]">
+                Su di noi </p>
+            <img class="absolute right-[9.5%] bottom-[16%]" src="./assets/images/png/down-arrow.png" alt="arrow">
+            <img id="bigArrow" class="2xl:max-w-[660px] xl:max-w-[500px] w-full max-w-[400px] lg:block hidden" src="assets/images/png/arrow-group.png" alt="big-arrow-image">
+            <div id="fadeSection" class="absolute max-lg:pt-[102px] lg:top-[20%] top-[40%] lg:left-[40%] left-[7%] opacity-0 transition-opacity duration-700">
+                <div class="relative">
+                    <img class="absolute -top-[20%] left-[-7%]" src="assets/images/png/group-top-arrow.png" alt="top-arrow">
+                    <img class="absolute -bottom-[3%] right-[8%]" src="assets/images/png/grpup-bottom-arrow.png" alt="bottom-arrow">
+                    <p class="lg:text-[50px] lg:leading-[60px] text-2xl leading-[34px] md:text-3xl font-normal max-w-[698px] mx-auto pb-[35px] text-[#29424D]">Siamo un’azienda digitale che si concentra sulla generazione di opportunità di business.</p>
+                </div>
+                <div class="flex items-center gap-[17px]">
+                    <img class="size-[51px]" src="assets/images/png/women-image.png" alt="officer">
+                    <p class="font-extralight text-base leading-7 lg:text-2xl lg:leading-[60px] tracking-[-1px] text-[#29424D]"><span class="lg:text-2xl text-base leading-[60px] tracking-[-1px] text-[#29424D] !font-normal">Federico,</span>
+                        CF Tecnology Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>gsap.registerPlugin(ScrollTrigger)</script>
+    <script src="./assets/script/app.js"></script>
+</body>
+
+</html>
