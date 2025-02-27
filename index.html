@@ -4,69 +4,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/images/png/left-arrow.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/png/arrow-group.png">
+    <!-- Primary Meta Tags -->
     <title>Gsap Task</title>
     <meta name="title" content="Gsap Task" />
-<meta name="description" content="Obiettivi chiari e definiti perseguiti con un approccio personalizzato verso risultati concreti e misurabili." />
+    <meta name="description" content=" Ideata da grazie all’esperienza acquisita nel noi tempo." />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gsap-task-peach.vercel.app/" />
-<meta property="og:title" content="Gsap Task" />
-<meta property="og:description" content="Obiettivi chiari e definiti perseguiti con un approccio personalizzato verso risultati concreti e misurabili." />
-<meta property="og:image" content="/meta-image.png" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gsap-task-orcin.vercel.app/" />
+    <meta property="og:title" content="Gsap Task" />
+    <meta property="og:description" content=" Ideata da grazie all’esperienza acquisita nel noi tempo." />
+    <meta property="og:image" content="/meta-image.png" />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://gsap-task-peach.vercel.app/" />
-<meta property="twitter:title" content="Gsap Task" />
-<meta property="twitter:description" content="Obiettivi chiari e definiti perseguiti con un approccio personalizzato verso risultati concreti e misurabili." />
-<meta property="twitter:image" content="/meta-image.png" />
-    <!-- ====== TAILWIND CSS ======= -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- ====== TAILWIND JS ======= -->
-         <link rel="icon" href="./assets/images/png/arrow-group.png">
-    <script src="./tailwind.config.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <style>
-    </style>    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gsap-task-orcin.vercel.app/" />
+    <meta property="twitter:title" content="Gsap Task" />
+    <meta property="twitter:description" content=" Ideata da grazie all’esperienza acquisita nel noi tempo." />
+    <meta property="twitter:image" content="/meta-image.png" />
+
 </head>
 
-<body>
-    <section class="min-h-screen bg-black flex justify-center items-center">
-        <h1 class="text-white text-3xl">Scroll Trigger</h1>
+<body class="max-w-[1920px] mx-auto bg-[#B5EFCB]">
+    <section class="min-h-screen flex justify-center items-center">
+        <div class="text-6xl">scroll down</div>
     </section>
-    <section class="bg-[#B5EFCB] relative min-h-screen pinned-section w-full">
-        <img class="relative" src="./assets/images/webp/hero-layer.webp" alt="image">
-        <div class="container lg:relative max-w-[1920px]">
-            <h2 class="text-white xl:left-[30%] lg:left-[16%] md:left-[12%] left-[5%] max-sm:right-2 lg:text-[30px] max-lg:pt-20 text-xl font-normal leading-[50px] text-center absolute xl:-top-[52%] top-[3%] lg:-top-[30%]"> Ideata da
-                 <span class="bg-[#99E9B3] lg:text-2xl text-xl py-[11px] px-6 rounded-[10px] text-black border-white border">noi</span>
-                grazie all’esperienza acquisita nel 
-                 <span class="bg-[#99E9B3] py-[11px] px-6 rounded-[10px] border-white border text-black lg:text-2xl text-xl">tempo</span>
+
+    <section class="min-h-screen bg-[#B5EFCB] relative overflow-hidden text-container">
+        <div class="absolute top-0">
+            <img src="assets/images/webp/hero-layer.webp" alt="hero-top">
+        </div>
+
+        <div class="container mx-auto px-4">
+            <h1
+                class="font-normal text-3xl text-white relative z-20  md:leading-[30px] leading-[45px] text-center xl:pt-[111px] pt-16 heading ">
+                Ideata da <span
+                    class="text-black text-2xl lg:px-6 lg:py-5 p-2 rounded-xl bg-[#7EE49C] border border-white">noi</span>
+                grazie all’esperienza acquisita nel
+                <span
+                    class="text-black text-2xl lg:px-6 lg:py-5 p-2 rounded-xl bg-[#7EE49C] border border-white ">tempo</span>
                 <span class="text-black">.</span>
-            </h2>
-            <p class="text-white text-base font-normal leading-[22.44px] text-end rotate-90 absolute right-[9%] bottom-[30%]">
-                Su di noi </p>
-            <img class="absolute right-[9.5%] bottom-[16%]" src="./assets/images/png/down-arrow.png" alt="arrow">
-            <img id="bigArrow" class="2xl:max-w-[660px] xl:max-w-[500px] w-full max-w-[400px] lg:block hidden" src="assets/images/png/arrow-group.png" alt="big-arrow-image">
-            <div id="fadeSection" class="absolute max-lg:pt-[102px] lg:top-[20%] top-[40%] lg:left-[40%] left-[7%] opacity-0 transition-opacity duration-700">
-                <div class="relative">
-                    <img class="absolute -top-[20%] left-[-7%]" src="assets/images/png/group-top-arrow.png" alt="top-arrow">
-                    <img class="absolute -bottom-[3%] right-[8%]" src="assets/images/png/grpup-bottom-arrow.png" alt="bottom-arrow">
-                    <p class="lg:text-[50px] lg:leading-[60px] text-2xl leading-[34px] md:text-3xl font-normal max-w-[698px] mx-auto pb-[35px] text-[#29424D]">Siamo un’azienda digitale che si concentra sulla generazione di opportunità di business.</p>
-                </div>
-                <div class="flex items-center gap-[17px]">
-                    <img class="size-[51px]" src="assets/images/png/women-image.png" alt="officer">
-                    <p class="font-extralight text-base leading-7 lg:text-2xl lg:leading-[60px] tracking-[-1px] text-[#29424D]"><span class="lg:text-2xl text-base leading-[60px] tracking-[-1px] text-[#29424D] !font-normal">Federico,</span>
-                        CF Tecnology Officer</p>
+            </h1>
+
+            <div class="flex">
+                <img src="assets/images/png/left-arrow.png" alt="left-arrow"
+                    class="absolute xl:left-[-2%] xl:top-[20%] left-[-4%] top-[17%] xl:w-[498px] w-[350px] left-img lg:block hidden">
+                <img src="assets/images/png/left-arrow-two.png" alt="left-arrow"
+                    class="absolute xl:top-[20%] xl:w-[498px] w-[350px] xl:left-[5%] top-[17%] left-[2%] left-img lg:block hidden">
+
+
+                <div class="flex flex-col m-auto pl-20 items-center  w-[698px]">
+                    <div class="text">
+                        <div class="absolute top-[32%] xl:left-[37%] left-[40%] text opacity-0 lg:block hidden">
+                            <img src="assets/images/png/group-top-arrow.png" alt="top-left">
+                        </div>
+                        <div class="absolute top-[48%] right-[29%] text opacity-0 lg:block hidden">
+                            <img src="assets/images/png/grpup-bottom-arrow.png" alt="top-left">
+                        </div>
+                        <p
+                            class="text-black xl:text-[50px] md:text-4xl text-2xl max-w-[698px] max-md:mx-auto absolute 2xl:left-[40%] lg:left-[45%] md:left-[18%] left-[5%] top-[35%] opacity-0 text">
+                            Siamo un’azienda digitale
+                            che si
+                            concentra sulla generazione di opportunità di business.</p>
+                        <div
+                            class="flex items-center gap-[17px] absolute 2xl:top-[52%] xl:top-[60%] top-[53%] 2xl:left-[40%] lg:left-[45%] md:left-[18%] left-[6%] opacity-0 text">
+                            <img src="assets/images/png/women-image.png" alt="federico"
+                                class="size-[51px] md:block hidden">
+                            <p class="text-xl font-normal "><span class="font-bold">Federico,</span> CF Tecnology
+                                Officer</p>
+                        </div>
+                    </div>
+                    <div class="text1">
+                        <div class="absolute top-[34%] left-[41%] text1 opacity-0 lg:block hidden">
+                            <img src="assets/images/png/group-top-arrow.png" alt="top-left">
+                        </div>
+                        <div
+                            class="absolute 2xl:top-[54%] xl:top-[62%] top-[52%] 2xl:right-[29%] xl:right-[21%] lg:right-[8%] text1 opacity-0 lg:block hidden">
+                            <img src="assets/images/png/group-bottom-arrow.png" alt="top-left">
+                        </div>
+                        <p
+                            class="text-black xl:text-[50px] md:text-4xl text-2xl max-w-[698px] absolute md:left-[18%] left-[5%] lg:left-[45%] top-[35%] opacity-0 text1">
+                            Obiettivi chiari e
+                            definiti
+                            perseguiti con un approccio personalizzato verso risultati concreti e misurabili.</p>
+                        <div
+                            class="flex items-center gap-[17px] absolute 2xl:top-[57%] xl:top-[66%] md:top-[56%] top-[50%] lg:left-[45%] md:left-[18%] left-[5%] opacity-0 text1">
+                            <img src="assets/images/png/devlopment-men.png" alt="federico" class="size-[51px] md:block hidden">
+                            <p class="text-xl font-normal"><span class="font-bold">Matteo,</span> Business
+                                Developmet Manager</p>
+                        </div>
+                    </div>
+                    <div class="text2">
+                        <div class="absolute top-[33%] left-[46%] text2 opacity-0 lg:block hidden">
+                            <img src="assets/images/png/group-top-arrow.png" alt="top-left">
+                        </div>
+                        <div
+                            class="absolute 2xl:top-[47%] 2xl:right-[29%] xl:top-[63%] top-[54%] xl:right-[22%] right-[20%] text2 opacity-0 lg:block hidden">
+                            <img src="assets/images/png/group-bottom-arrow.png" alt="top-left">
+                        </div>
+                        <p
+                            class="text-black xl:text-[50px] md:text-4xl text-2xl max-w-[698px] absolute md:left-[18%] left-[5%] lg:left-[50%] top-[35%] opacity-0  text2">
+                            Qualifichiamo i dati in
+                            tempo reale
+                            consentendo di incrementare il ROI delle azioni di lead generation.</p>
+
+                        <div
+                            class="flex items-center gap-[17px] absolute 2xl:top-[58%] xl:top-[65%] lg:top-[61%] top-[55%] md:left-[18%] left-[5%] lg:left-[50%] opacity-0 text2">
+                            <img src="assets/images/png/it-manager.png" alt="federico"
+                                class="size-[51px] md:block hidden">
+                            <p class="text-xl font-normal"><span class="font-bold">Federico,</span> IT Manager</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="absolute bottom-0 right-[5%] bottom-img">
+            <img src="assets/images/png/top-bottom-arrow.png" alt="top-bottom">
+        </div>
+
     </section>
-    <script>gsap.registerPlugin(ScrollTrigger)</script>
-    <script src="./assets/script/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".text-container",
+                start: "top top",
+                end: "bottom top",
+                scrub: 3,
+                pin: true,
+            }
+        });
+
+        tl.fromTo(".heading", {
+            y: 100,
+            opacity: 0
+        },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 2,
+                ease: "power2.out"
+            });
+
+        tl.fromTo(".left-img", {
+            x: -100,
+            opacity: 0
+
+        },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 2
+
+            });
+
+        tl.to(".text", {
+            opacity: 1,
+            duration: 2
+        })
+
+        tl.fromTo(".bottom-img",
+            {
+                y: -100
+            },
+            {
+                y: -200,
+                duration: 2
+
+            })
+
+
+        tl.fromTo(".left-img",
+            {
+                x: 0,
+                opacity: 1
+
+            },
+            {
+                x: 40,
+                opacity: 1,
+                duration: 2
+
+            })
+            .to(".text", {
+                opacity: 0,
+                duration: 2
+            });
+
+
+        tl.to(".text1",
+            {
+                opacity: 1
+
+            })
+
+
+        tl.fromTo(".bottom-img",
+            {
+                y: -200
+
+            },
+            {
+                y: -400,
+                duration: 2
+
+            });
+
+        tl.fromTo(".left-img",
+            {
+                x: 40,
+                opacity: 1
+
+            },
+            {
+                x: 80,
+                opacity: 1,
+                duration: 2
+
+            })
+            .to(".text1",
+                {
+                    opacity: 0,
+                    duration: 2
+
+                });
+
+
+        tl.fromTo(".bottom-img",
+            {
+                y: -400
+
+            },
+            {
+                y: -500,
+                duration: 2
+
+            });
+        tl.to(".text2",
+            {
+                opacity: 1
+
+            });
+    </script>
+
+
 </body>
+
 
 </html>
